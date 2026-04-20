@@ -1,0 +1,32 @@
+using UnityEngine;
+
+public class ejerciicio1 : MonoBehaviour
+{
+    
+    public int energiaActual = 100;
+    public int costoHabilidad = 50;
+    void Start()
+
+    {
+        int energiaRestante = energiaActual - costoHabilidad;
+        if(energiaActual >=0)
+        {
+            Debug.Log(" energiaRestante "+energiaRestante);
+        }
+        else
+        {
+            Debug.Log(" no puedes usar la habilidad ");
+        }
+        
+    }
+   
+    void Update()
+    {
+        
+    }
+}
+
+
+
+
+
