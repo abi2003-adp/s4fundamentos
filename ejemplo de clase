@@ -1,0 +1,34 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+
+public class GameManager : MonoBehaviour
+{
+    [SerializeField] private int vida = 10;
+    [SerializeField] private bool tieneLlave = false;
+
+    void Start()
+    {
+
+
+    }
+
+
+    void Update()
+    {
+        // input.getkeydown(keycode.W)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Debug.Log("la barra espaciadora fue presionada :) ");
+        }
+
+
+        if (tieneLlave == true && vida >= 5)
+        {
+            Debug.Log("puedes entrar a la mazmorra");
+        }
+        else
+        {
+            Debug.Log("Git gud");
+        }
+    }
+} 
