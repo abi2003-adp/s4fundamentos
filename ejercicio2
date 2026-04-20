@@ -1,0 +1,29 @@
+using UnityEditor.Experimental.GraphView;
+using UnityEngine;
+
+public class ejecicio2 : MonoBehaviour
+{
+    public bool tieneLlave = true;
+    public bool espacioDisponible = true;
+    void Start()
+    {
+        bool puedeAbrir = tieneLlave && espacioDisponible;
+        
+          if (puedeAbrir) 
+            {
+            Debug.Log ("cofre abierto");
+            }
+          else                   
+            {
+            Debug.Log("no puedes abrir el cofre");
+            }
+         
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}
+
